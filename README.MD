@@ -16,11 +16,11 @@ A simple PHP-based web application to manage timetables. It uses MySQL to store 
    
    ```bash
    # Database configuration
-   db_hostname=127.0.0.1
+   db_hostname=your_host
    db_username=your_database_username
    db_password=your_database_password
    db=your_database_name
-   db_port=3306
+   db_port=your_port
 
    # Admin credentials
    username=your_admin_username
