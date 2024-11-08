@@ -26,19 +26,26 @@ A simple PHP-based web application to manage timetables. It uses MySQL to store 
    username=your_admin_username
    password=your_admin_password
 
-4. Create the MySQL database and the timetable table by following these steps:
+4. **Create the MySQL database and the timetable table by following these steps:**
 
-Open phpMyAdmin (or any MySQL client) and log in.
-Create a new database:
-CREATE DATABASE your_database_name;
-Use the database:
-USE your_database_name;
-Create the timetable table with the following SQL:
-CREATE TABLE timetable (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    day VARCHAR(20) NOT NULL,
-    class VARCHAR(20) NOT NULL,
-    faculty VARCHAR(20) NOT NULL,
-    time VARCHAR(20) NOT NULL
-);
+   - Open phpMyAdmin (or any MySQL client) and log in.
+   - **Create a new database:**
+     ```sql
+     CREATE DATABASE your_database_name;
+     ```
+   - **Select the newly created database:**
+     ```sql
+     USE your_database_name;
+     ```
+   - **Create the `timetable` table:**
+     ```sql
+     CREATE TABLE timetable (
+         id INT AUTO_INCREMENT PRIMARY KEY,
+         day VARCHAR(20) NOT NULL,
+         class VARCHAR(20) NOT NULL,
+         faculty VARCHAR(20) NOT NULL,
+         time VARCHAR(20) NOT NULL
+     );
+     ```
+
 5.Access the application via your local server by visiting http://localhost/your_project_name/
