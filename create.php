@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+
+$is_logged = isset($_SESSION["is_logged"]) ? $_SESSION["is_logged"] : false;
+if (!$is_logged) {
+    echo "<script>alert('You must log in to perform this action');window.location.href='index.php';</script>";
+    exit();
+}
 
 if (isset($_POST['submit'])) {
     $day = isset($_POST['day']) ? trim($_POST['day']) : '';
